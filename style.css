@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin-left: 0;
+  font-family: 'Baloo Paaji 2', cursive;
+
+  font-family: 'Inter', sans-serif;
+}
+
+.main {
+  display: flex;
+}
+
+.first {
+  width: 75%;
+}
+
+.second {
+  width: 25%;
+}
+
+.sections {
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid;
+}
+
+.blue {
+  display: flex;
+  justify-content: right;
+  background-color: blue;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+}
+
+.level,
+.level1,
+.question,
+.questions,
+.buttons,
+.profile,
+.nums,
+.submit,
+.overall,
+.choose {
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+}
+
+.questions {
+  padding-bottom:20%;
+  max-height: 333px;
+  overflow: auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid;
+}
+
+.save,
+#saveSubmit {
+  background-color: blue;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  border-color: blue;
+  border-radius: 5px;
+}
+
+.save:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em
+    var(--hover);
+    transform: translateY(-0.25em);
+}
+
+#saveSubmit {
+  opacity: 0.4;
+}
+
+.obut {
+  padding: 15px 32px;
+  font-size: 16px;
+}
+.obut:hover {
+  background-color: blue;
+  border-color: blue;
+  border-radius: 5px;
+  color: white;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  border-style: solid;
+  border-width: 1px;
+}
+.profile {
+  display: flex;
+  border-top: 2px solid;
+}
+.level1 {
+  background-color: blue;
+  color: white;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.nums {
+  position: relative;
+
+  max-height: 218.5px;
+  padding: 10px;
+  overflow: auto;
+  /*text-overflow: ellipsis;*/
+  width: 100%;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid;
+}
+
+.answered {
+  position: relative;
+  border: none;
+  width: 35px;
+  height: 35px;
+  
+}
+
+span {
+  padding: 5px;
+  
+}
+
+.overall {
+    display: flex;
+    flex-wrap: wrap;
+  height: 150px;
+  overflow: scroll;
+  position: relative;
+  width: 100%;
+  
+}
+
+.overall>*{
+    flex: 1 1 1;
+}
+
+.hakuna {
+  display: flex;
+  position: relative;
+  text-align: center;
+  width: 50%;
+  padding: 5px;
+}
+.choose {
+  height: 8%;
+}
+
+.view {
+  color: white;
+}
+.data{
+  position: absolute;
+  padding: 8%;
+  color:white;
+  z-index: 2;
+  
+}
+.inform {
+    vertical-align: right;
+    
+    font-size: small;
+  /*padding-left: 10px;*/
+}
+

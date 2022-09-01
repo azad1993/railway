@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&family=Inter&display=swap" rel="stylesheet">
+    <title>Railway</title>
+</head>
+<div>
+    <div class="main">
+        <div class="first">
+            <div class="sections">
+                <div>Sections</div>
+                <div class="time">Time left: <span id="min">90:00</span></div>
+            </div>
+
+            <div class="level">Level 1</div>
+
+            <div class="question">Question type: Multiple choice question</div>
+
+            <div class="blue">
+                <div class="lang">
+                    <label for="language" class="view">View in:</label>
+                    <select name="language" id="languages">
+                        <option value="volvo">English</option>
+                        <option value="saab">Indian</option>
+                        <option value="opel">Russian</option>
+                        <option value="audi">China</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="question">Question No: <span id="qnum">1</span></div>
+
+            <div class="questions">
+                <p id="quqest">Please select your favorite Web language:</p>
+                  <input type="radio" id="html" class="choice-text" name="fav_language" value="HTML">
+                  <label for="html" class="choice-text" data-number="1">HTML</label><br>
+                  <input type="radio" id="css" class="choice-text" name="fav_language" value="CSS">
+                  <label for="css" class="choice-text" data-number="2">CSS</label><br>
+                  <input type="radio" id="javascript" class="choice-text" name="fav_language" value="JavaScript">
+                  <label for="javascript" class="choice-text" data-number="3">JavaScript</label><br>
+                  <input type="radio" id="javascript" class="choice-text" style="margin-left:10px;" name="fav_language" value="JavaScript">
+                  <label for="javascript" class="choice-text" data-number="4">jQuery</label>
+            </div>
+
+
+
+            <div class="buttons">
+                <div class="fbut">
+                    <button class="obut" id="markfor">Mark for Review & Next</button>
+                    <button class="obut" id="checkOut">Clear Response</button>
+                </div>
+                <div class="lbut">
+                    <button class="save" id="saveMe">Save & Next</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="second">
+            <div class="profile"><img
+                    src="https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" />
+                <p style="margin-left:5%">John Smith</p>
+            </div>
+            <div class="overall">
+                <div class="hakuna"><span class="data" id="answeredInfo">0</span><img class="answered" src="./src/attempt.png" /><span
+                        class="inform">Answered</span></div>
+                <div class="hakuna"> <span class="data" id="notAnswer">0</span><img class="answered" src="./src/unattempt.png" /><span
+                        class="inform">Not answered</span></div>
+                <div class="hakuna"><span class="data" id="notVisit">0</span> <img class="answered" src="./src/not_visit.png" /><span
+                        class="inform">Not visited</span></div>
+                <div class="hakuna"> <span class="data" id="markedrev">0</span><img class="answered"
+                        src="./src/mark_for_review.png" /><span class="inform">Marked for Review</span></div>
+                <div class="hakuna"><span class="data" id="markedAndAns">0</span> <img class="answered"
+                        src="./src/mark_for_review.png" /><i class="fa fa-bars"></i><span class="inform">Answered & Marked for Review (will be
+                        considered for evaluation)</span></div>
+            </div>
+            <div class="level1">Level 1</div>
+            <div class="choose">Choose a question</div>
+            <div class="nums" id="baby">
+            
+            </div>
+            <div class="submit"><button id="saveSubmit" type="button" disabled>Submit</button></div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    </body>
+
+</html>
