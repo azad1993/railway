@@ -1,6 +1,6 @@
 var targetNum;
 
-for (var i = 1; i < 101; i++) {
+for (var i = 1; i < 41; i++) {
   var para = document.createElement("img");
   var nums = document.createElement("span");
 
@@ -492,7 +492,7 @@ markfor.addEventListener("click", () => {
       notVisitCount--;
       notVisit.innerText = notVisitCount;
       swicher = true;
-      iconNum[0].src = "./src/mark_for_review.png";
+      iconNum[0].src = "./src/ans_and_mark_for_review-removebg-preview.png";
     }
   }
   if (!swicher && markforreview < 40 && notVisitCount >= 1) {
